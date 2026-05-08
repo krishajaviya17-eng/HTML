@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        .container {
+
+            padding: 20px;
+
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px
+        }
+
+        .card {
+            height: 300px;
+            width: 500px;
+            background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 20px solid rgba(255, 255, 255, 0.5);
+            background-origin: border-box;
+            position: relative;
+        }
+
+        .innerCard {
+            height: 250px;
+            width: 450px;
+            background: transparent;
+            border: 5px solid #fff;
+            padding: 150px 0 0 180px;
+            margin-left: -40px;
+            transition: .32s;
+            opacity: 0;
+        }
+
+        .card:hover .innerCard {
+            margin-left: 0;
+            opacity: 1;
+        }
+
+        span {
+            font-size: 24px;
+            letter-spacing: 5px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .card1 {
+            background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg');
+            background-size: cover;
+        }
+
+        h3 {
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .card,
+        .card1 {
+            background-position: -40px 0;
+            transition: .4s;
+        }
+
+        .card:hover,
+        .card1:hover {
+            background-position: 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col">
+                <h3>Fall Ahead</h3>
+                <div class="innerCard">
+                    <span>New Arrivals</span>
+                </div>
+            </div>
+            <div class="card card1 col">
+                <h3>Fall Ahead</h3>
+                <div class="innerCard">
+                    <span>New Arrivals</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
